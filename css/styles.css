@@ -58,7 +58,39 @@ header .main-nav li a, header .right-nav li a {
 	background-size: cover;
 	background-position: center;
 }
+#hero .container {
+	display: flex;
+	align-items: center;
+	height: 700px;
+}
+
+.hero-text, .hero-date {
+	font-family: "built_titling_regular", Helvetica, sans-serif;
+	font-size: 30px;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+.hero-text .hero-title {
+	font-family: 'built_titling', Helvetica, sans-serif;
+	font-size: 120px;
+	margin: 20px 0px;
+	font-weight: normal;
+	color: #FFFFFF;
+	line-height: 1;
+}
 .container {
 	max-width: 940px;
 	margin: 0 auto;
+}
+.btn-primary {
+	display: inline-block;
+	font-family: "built_titling_regular", Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	letter-spacing: 4.5px;
+	background: #BF0000;
+	color: white;
+	padding: 12px 22px;
+	border: none;
+	outline: none;
 }
