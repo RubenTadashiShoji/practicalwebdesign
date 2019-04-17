@@ -94,3 +94,56 @@ header .main-nav li a, header .right-nav li a {
 	border: none;
 	outline: none;
 }
+/* BLOG SECTION */
+#blog {
+	margin-bottom: 50px;
+}
+#blog h2 {
+	font-family: 'built_titlingregular', Helvetica, sans-serif;
+	font-weight: 200;
+	font-size: 60px;
+}
+.blog-posts {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+.blog-post {
+	width: 33.33%;
+	padding: 0 5px;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+}
+.blog-post img {
+	width:100%;
+}
+
+.blog-post .blog-post-date {
+	font-size:14px;
+	color: #9A9A9A;
+	margin-top: 20px;
+}
+.blog-post h3 {
+	font-size: 20px;
+	color: #4A4A4A;
+	letter-spacing: -0.4px;
+	line-height: 1.4;
+}
+.blog-post .blog-post-desc {
+	font-size: 14px;
+	color: #4a4a4a;
+	line-height: 1.6;
+}
+.blog-post .blog-post-desc a {
+	color: #BF0000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.blog-show-more {
+	text-align: center;
+}
+#blog {
+	margin-bottom: 50px;
+}
+/* END OF BLOG SECTION */
