@@ -104,6 +104,7 @@ header .main-nav, header .right-nav {
 	padding: 12px 22px;
 	border: none;
 	outline: none;
+	transition: all 0.3s ease;
 }
 
 /* Large Mobile Styles */
@@ -203,9 +204,23 @@ header .main-nav, header .right-nav {
 	display: flex;
 	align-items: top;
 }
+
+/* Small Mobile Styles */
+@media only screen and (max-width: 400px) {
+	#about-us {
+		flex-direction: column;
+	}
+}
 .about-us-title {
 	width: 50%;
 }
+/* Small Mobile Styles */
+@media only screen and (max-width: 400px) {
+	.about-us-title {
+		width:100%;
+	}
+}
+
 .about-us-title h3 {
 	font-family: 'built_titlingregular', Helvetica, sans-serif;
 	font-weight: 400;
@@ -224,6 +239,14 @@ header .main-nav, header .right-nav {
 }
 .about-us-desc {
 	width: 50%;
+}
+
+/* Small Mobile Styles */
+@media only screen and (max-width: 400px) {
+	.about-us-desc {
+		width:100%;
+		margin-top: 50px;
+	}
 }
 .about-us-desc h4 {
 	font-family: 'built_titling', Helvetica, sans-serif;
@@ -280,6 +303,16 @@ footer .main-nav li, footer .right-nav li {
 	list-style-type: none;
 	display: inline-block;
 }
+/* Small Mobile Styles */
+@media only screen and (max-width: 768px) {
+	footer .main-nav li, footer .right-nav li {
+		display: block;
+	}
+	
+	footer .main-nav li a, footer .right-nav li a {
+		padding: 0px;
+	}
+}
 footer .main-nav li a, footer .right-nav li a {
 	color: white;
 	text-decoration: none;
@@ -288,6 +321,16 @@ footer .main-nav li a, footer .right-nav li a {
 	font-size: 20px;
 	letter-spacing: 4px;
 	padding: 0px 15px;
+}
+/* Small Mobile Styles */
+@media only screen and (max-width: 768px) {
+	footer .container {
+		height: auto;
+		flex-direction: column;
+	}
+	footer .container ul {
+		padding: 0;
+	}
 }
 /* END FOOTER SECTION */
 
@@ -346,4 +389,32 @@ main.active {
 }
 /* END MOBILE NAVIGATION */
 
+/* Pseudo classes */
+.nav li a:hover {
+	text-decoration: underline;
+}
+.btn-primary:hover {
+	background: #A3171B;
+}
+.btn-primary:active {
+	box-shadow: inset 0px 8px 4px rgba(0,0,0,0.25);
+}
+/* END Pseudo classes */
+
+/* The animation code */
+@keyframes sticky-animation {
+	from {transform: translateY(-90px)}
+	to {transform: translateY(0px)}
+}
+
+
+/* Header Sticky */
+header.sticky {
+	position: fixed;
+	top:0;
+	background-color: #212121;
+	background-image: none;
+	animation-name: sticky-animation;
+	animation-duration: 0.3s;
+}
 
