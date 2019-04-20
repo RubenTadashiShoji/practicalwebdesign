@@ -418,3 +418,43 @@ header.sticky {
 	animation-duration: 0.3s;
 }
 
+/* INSTAFEED */
+
+#instafeed {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	background: black;
+}
+
+#instafeed a {
+	flex-grow: 1;
+	opacity: 0.3;
+	transition: opacity 0.3 ease;
+}
+
+#instafeed a:hover {
+	opacity: 1;
+}
+
+/* Table Styles */
+@media only screen and (max-width: 1024px){
+	#instafeed a img {
+		max-width: 300px;
+	}
+}
+
+/* Large Mobile Styles */
+@media only screen and (max-width: 768px) {
+	#instafeed a img {
+		max-width: 200px;
+	}
+}
+
+/* Small Mobile Styles */
+@media only screen and (max-width: 400px) {
+	#instafeed a img {
+		max-width: 100px;
+	}
+}
